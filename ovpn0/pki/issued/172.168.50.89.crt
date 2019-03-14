@@ -1,0 +1,61 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            7a:1e:96:b5:03:fd:6c:47:37:c6:aa:c2:84:15:db:76
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=shemg
+        Validity
+            Not Before: Mar 13 10:00:44 2019 GMT
+            Not After : Feb 25 10:00:44 2022 GMT
+        Subject: CN=172.168.50.89
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:e7:36:e4:6a:da:a2:92:56:14:38:cb:db:a3:6b:
+                    27:d7:e0:ac:c9:43:2c:cc:d3:76:d6:d7:06:e3:bc:
+                    e7:3c:45:b2:14:76:ba:ac:65:c6:ff:d0:eb:53:b4:
+                    9a:e4:f6:66:e7:81:54:5d:fc:38:b6:e6:97:8a:ca:
+                    44:c4:9c:e7:4d:28:42:b3:8c:5b:73:9e:97:85:f0:
+                    35:97:89:8c:e7:88:bc:92:e7:d9:19:7c:13:f2:e4:
+                    24:db:9d:2e:71:93:44
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                67:5E:55:9F:EA:E5:37:9F:BF:A9:0F:55:91:29:5F:2F:A3:E6:75:C1
+            X509v3 Authority Key Identifier: 
+                keyid:6B:A0:E5:FD:10:95:B4:F6:C3:73:39:2A:1E:2A:85:DD:6E:2C:AF:3F
+                DirName:/CN=shemg
+                serial:0F:66:C6:FE:4F:4B:34:B9:D7:E9:BC:F6:42:6F:33:43:E0:32:69:16
+
+            X509v3 Extended Key Usage: 
+                TLS Web Server Authentication
+            X509v3 Key Usage: 
+                Digital Signature, Key Encipherment
+            X509v3 Subject Alternative Name: 
+                IP Address:172.168.50.89
+    Signature Algorithm: ecdsa-with-SHA256
+         30:66:02:31:00:d8:a1:ab:a6:47:a4:50:1a:f4:e4:05:13:bc:
+         d1:96:40:44:99:a3:a7:e7:a7:75:f3:f9:98:62:84:ca:a3:d0:
+         5b:7e:78:24:8c:71:8c:6a:79:b3:41:26:06:94:94:d6:2d:02:
+         31:00:ae:a5:79:3a:c3:36:3d:6c:49:b1:f0:61:64:9f:72:32:
+         cd:8a:64:fb:a6:8d:d5:40:6f:0d:3d:65:f3:b2:3d:ab:94:41:
+         16:72:cf:06:34:08:3f:33:b1:f7:f5:c5:ae:9d
+-----BEGIN CERTIFICATE-----
+MIICEjCCAZegAwIBAgIQeh6WtQP9bEc3xqrChBXbdjAKBggqhkjOPQQDAjAQMQ4w
+DAYDVQQDDAVzaGVtZzAeFw0xOTAzMTMxMDAwNDRaFw0yMjAyMjUxMDAwNDRaMBgx
+FjAUBgNVBAMMDTE3Mi4xNjguNTAuODkwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAATn
+NuRq2qKSVhQ4y9ujayfX4KzJQyzM03bW1wbjvOc8RbIUdrqsZcb/0OtTtJrk9mbn
+gVRd/Di25peKykTEnOdNKEKzjFtznpeF8DWXiYzniLyS59kZfBPy5CTbnS5xk0Sj
+ga0wgaowCQYDVR0TBAIwADAdBgNVHQ4EFgQUZ15Vn+rlN5+/qQ9VkSlfL6PmdcEw
+SwYDVR0jBEQwQoAUa6Dl/RCVtPbDczkqHiqF3W4srz+hFKQSMBAxDjAMBgNVBAMM
+BXNoZW1nghQPZsb+T0s0udfpvPZCbzND4DJpFjATBgNVHSUEDDAKBggrBgEFBQcD
+ATALBgNVHQ8EBAMCBaAwDwYDVR0RBAgwBocErKgyWTAKBggqhkjOPQQDAgNpADBm
+AjEA2KGrpkekUBr05AUTvNGWQESZo6fnp3Xz+ZhihMqj0Ft+eCSMcYxqebNBJgaU
+lNYtAjEArqV5OsM2PWxJsfBhZJ9yMs2KZPumjdVAbw09ZfOyPauUQRZyzwY0CD8z
+sff1xa6d
+-----END CERTIFICATE-----

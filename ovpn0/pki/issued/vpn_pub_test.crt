@@ -1,0 +1,58 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            d4:ba:59:74:0b:a7:2d:16:22:05:35:1c:e4:3d:af:ce
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=shemg
+        Validity
+            Not Before: Mar 13 10:00:50 2019 GMT
+            Not After : Feb 25 10:00:50 2022 GMT
+        Subject: CN=vpn_pub_test
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:f0:cd:77:8e:dc:ae:50:24:b9:6e:94:2f:6f:2f:
+                    a5:dc:5d:b1:cc:df:3a:1f:91:3d:05:b4:75:00:d2:
+                    d1:0d:fd:76:0c:69:e1:1e:94:7c:f7:1a:96:9d:40:
+                    e1:ae:83:a4:6f:c9:65:34:3b:d3:99:58:7b:c8:70:
+                    fa:3e:98:15:ac:a0:f8:a7:73:bd:1f:78:b7:4d:54:
+                    35:5a:17:b7:90:1e:5b:6d:20:1f:b9:9d:2a:72:a1:
+                    1b:06:d4:fa:79:3f:77
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                E7:6E:52:EB:0C:89:14:C3:68:49:84:5E:2A:D2:3A:AA:E5:13:D2:F1
+            X509v3 Authority Key Identifier: 
+                keyid:6B:A0:E5:FD:10:95:B4:F6:C3:73:39:2A:1E:2A:85:DD:6E:2C:AF:3F
+                DirName:/CN=shemg
+                serial:0F:66:C6:FE:4F:4B:34:B9:D7:E9:BC:F6:42:6F:33:43:E0:32:69:16
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:64:02:30:33:44:42:ed:60:09:84:85:86:eb:c4:db:87:10:
+         59:1b:cb:ab:83:98:a7:3d:b6:28:aa:41:e3:8c:10:13:66:1a:
+         30:01:1a:b0:0b:21:0f:8b:c0:90:0f:3d:37:15:76:46:02:30:
+         3a:30:1d:61:45:4b:60:5b:a0:f3:0b:26:7a:13:de:71:62:c3:
+         5c:7a:25:14:94:cb:61:75:54:79:f5:a6:e6:5d:34:40:ac:0b:
+         b1:0e:d3:d3:38:bc:1b:cf:b3:55:75:ca
+-----BEGIN CERTIFICATE-----
+MIIB/zCCAYagAwIBAgIRANS6WXQLpy0WIgU1HOQ9r84wCgYIKoZIzj0EAwIwEDEO
+MAwGA1UEAwwFc2hlbWcwHhcNMTkwMzEzMTAwMDUwWhcNMjIwMjI1MTAwMDUwWjAX
+MRUwEwYDVQQDDAx2cG5fcHViX3Rlc3QwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAATw
+zXeO3K5QJLlulC9vL6XcXbHM3zofkT0FtHUA0tEN/XYMaeEelHz3GpadQOGug6Rv
+yWU0O9OZWHvIcPo+mBWsoPinc70feLdNVDVaF7eQHlttIB+5nSpyoRsG1Pp5P3ej
+gZwwgZkwCQYDVR0TBAIwADAdBgNVHQ4EFgQU525S6wyJFMNoSYReKtI6quUT0vEw
+SwYDVR0jBEQwQoAUa6Dl/RCVtPbDczkqHiqF3W4srz+hFKQSMBAxDjAMBgNVBAMM
+BXNoZW1nghQPZsb+T0s0udfpvPZCbzND4DJpFjATBgNVHSUEDDAKBggrBgEFBQcD
+AjALBgNVHQ8EBAMCB4AwCgYIKoZIzj0EAwIDZwAwZAIwM0RC7WAJhIWG68TbhxBZ
+G8urg5inPbYoqkHjjBATZhowARqwCyEPi8CQDz03FXZGAjA6MB1hRUtgW6DzCyZ6
+E95xYsNceiUUlMthdVR59abmXTRArAuxDtPTOLwbz7NVdco=
+-----END CERTIFICATE-----
