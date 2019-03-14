@@ -58,14 +58,14 @@ if [ "$isUpdateK8s" = "1" ]; then
     kubectl delete service ovpn0
     kubectl delete deployment ovpn0
 
-	#服务端秘钥
-	kubectl create secret generic ovpn0-key --from-file=server/pki/private/"$server".key
-	#服务端证书
-	kubectl create secret generic ovpn0-cert --from-file=server/pki/issued/"$server".crt
-	#服务端pki
-	kubectl create secret generic ovpn0-pki --from-file=server/pki/ca.crt --from-file=server/pki/dh.pem --from-file=server/pki/ta.key
-	kubectl create configmap ovpn0-conf --from-file=server/
-	kubectl create configmap ccd0 --from-file=server/ccd
-	kubectl apply -f ../openvpn.yaml
+    #服务端秘钥
+    kubectl create secret generic ovpn0-key --from-file=server/pki/private/"$server".key
+    #服务端证书
+    kubectl create secret generic ovpn0-cert --from-file=server/pki/issued/"$server".crt
+    #服务端pki
+    kubectl create secret generic ovpn0-pki --from-file=server/pki/ca.crt --from-file=server/pki/dh.pem --from-file=server/pki/ta.key
+    kubectl create configmap ovpn0-conf --from-file=server/
+    kubectl create configmap ccd0 --from-file=server/ccd
+    kubectl apply -f ../openvpn.yaml
 
 fi
