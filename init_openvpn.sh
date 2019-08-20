@@ -7,17 +7,19 @@ serverPublicUrl="$protocol://$server:$port"
 #openvpn dns
 dnsParams="-n 218.85.157.99 -n 218.85.152.99"
 #vpn隧道子网段
-serverSubnetParams="-s 10.10.0.0/24"
+serverSubnetParams="-s 10.10.0.0/16"
 #vpn服务器内网网段
-pushParams='-p "route 192.168.0.0 255.255.0.0" -p "route 10.10.0.0 255.255.255.0"'
+#pushParams='-p "route 192.168.0.0 255.255.0.0" -p "route 10.10.0.0 255.255.255.0"'
+pushParams='-p "route 10.244.0.0 255.255.0.0" -p "route 10.96.0.0 255.255.0.0"'
 clientName="vpn_pub_test"
 isUpdateK8s=1
 
 rm -rf ovpn0 && mkdir ovpn0 && cd ovpn0
+docker pull kylemanna/openvpn
 #推送DNS
 #getConfigCommand="docker run --net=none --rm -it -v $PWD:/etc/openvpn kylemanna/openvpn ovpn_genconfig -u $serverPublicUrl -C 'AES-256-GCM' -a 'SHA384' -T 'TLS-ECDHE-ECDSA-WITH-AES-256-GCM-SHA384' -b $dnsParams $serverSubnetParams $pushParams";
 #不推送DNS
-getConfigCommand="docker run --net=none --rm -it -v $PWD:/etc/openvpn kylemanna/openvpn ovpn_genconfig -u $serverPublicUrl -C 'AES-256-GCM' -a 'SHA384' -T 'TLS-ECDHE-ECDSA-WITH-AES-256-GCM-SHA384' -b -D $serverSubnetParams $pushParams";
+getConfigCommand="docker run --net=none --rm -it -v $PWD:/etc/openvpn kylemanna/openvpn ovpn_genconfig -u $serverPublicUrl -C 'AES-256-GCM' -a 'SHA384' -T 'TLS-ECDHE-ECDSA-WITH-AES-256-GCM-SHA384' -c -d -b -D $serverSubnetParams $pushParams";
 eval $getConfigCommand
 
 #2.生成PKI(公钥基础设施)、CA(证书颁发机构)、生成服务端证书、服务端证书签约、创建Diffie-Hellman证书
